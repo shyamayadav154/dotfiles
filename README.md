@@ -24,7 +24,7 @@ git clone https://github.com/jeffreytse/zsh-vi-mode.git
 after pulling this repo, run this command to install all the dependencies
 
 ```bash
-brew install git fzf ripgrep fd starship tmux bat btop wezterm exa nvim zsh-autosuggestions zsh-syntax-highlighting ollama
+brew install git fzf ripgrep fd starship tmux bat btop exa zsh-autosuggestions zsh-syntax-highlighting ollama entr
 ```
 
 autin search history finder
@@ -39,7 +39,8 @@ web dev related tools
 brew install nvm
 nvm install 18
 nvm use 18
-brew install docker
+brew install jq neovim awscli tmux
+brew install --cask docker wezterm  cursor google-chrome visual-studio-code
 brew install jesseduffield/lazygit/lazygit
 brew install jesseduffield/lazydocker/lazydocker
 ```
