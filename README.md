@@ -21,10 +21,14 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 git clone https://github.com/jeffreytse/zsh-vi-mode.git
 ```
 
+install starship
+```bash
+curl -sS https://starship.rs/install.sh | sh
+```
 after pulling this repo, run this command to install all the dependencies
 
 ```bash
-brew install git fzf ripgrep fd starship tmux bat btop exa zsh-autosuggestions zsh-syntax-highlighting ollama entr
+brew install git fzf ripgrep fd tmux bat btop exa zsh-autosuggestions zsh-syntax-highlighting ollama entr
 ```
 
 autin search history finder
