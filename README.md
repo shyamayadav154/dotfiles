@@ -7,19 +7,16 @@ install zsh script
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-install zsh theme
+install zsh plugins that are in .zshrc
 ```bash
-brew install powerlevel10k
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/jeffreytse/zsh-vi-mode \
+  $ZSH_CUSTOM/plugins/zsh-vi-mode
+
 ```
 
 
-install zsh missing plugins
-```bash
-cd ~/.oh-my-zsh/custom/plugins
-git clone https://github.com/zsh-users/zsh-autosuggestions.git
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-git clone https://github.com/jeffreytse/zsh-vi-mode.git
-```
 
 install starship
 ```bash

@@ -1,10 +1,4 @@
 
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # ~/.tmux/plugins
 # export PATH=$HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
 
@@ -152,7 +146,6 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 export ZSH="$HOME/.oh-my-zsh"
 eval "$(zoxide init zsh)"
 
-eval "$(starship init zsh)"
 # eval "$(oh-my-posh init zsh)"
 
 
@@ -259,9 +252,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source /Users/shyamanandyadav/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
 eval $(thefuck --alias f)
@@ -328,4 +318,6 @@ case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
+
+eval "$(starship init zsh)"
 # pnpm end
