@@ -306,7 +306,6 @@ export PATH=/Users/shyamanandyadav/.sst/bin:$PATH
 
 
 #aider
-export GEMINI_API_KEY=AIzaSyB1kvTfuufo1KO2xGxE4H5luGzM4DJiRDo
 
 export AIDER_DARK_MODE=true
 
